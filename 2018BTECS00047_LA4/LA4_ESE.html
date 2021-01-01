@@ -1,0 +1,110 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>registration form</title> 
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: black;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+
+} 
+a:link {color: #FF1493;} 		
+			a:visited {color: 	#3cb371;}
+			a:hover {color: #0000FF;}
+			a:active {color: rgb(255, 0, 0);} 
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <center>  <h1> Student Registration Form</h1>
+	<nav>
+		<a href="homepage.html">HOME|</a>
+		<a href="LA4_ESE.html">Register |</a>
+		<a href="login.html">Login </a>
+	</nav>
+	</center>  
+  <hr>  
+  
+  <label> <b>Student Name:</b> </label>   
+<input type="text" name="studentname" placeholder= "Lastname Firstname Middlename" size="15" required />   
+<div>  
+<label><b>  
+Mobile Number :  
+</b></label>  
+  <input Type="tel" id="mobile"name="mobile" size="10" placeholder="mobile No"><br><br>
+<label>   
+<label for="ID Proof"><b>Choose your ID Proof:</b></label>
+				<select name="Idproof" id="proof" size="1">
+					<option value="adharcard" selected>Adhar Card</option>
+					<option value="pancard ">Pancard</option>
+					<option value="voterid">Voter ID</option>
+					<option value="bonafide">Caste Certificate</option>
+				</select>
+				<input type="file" name="myfile"><br><br>
+
+</label><b>   
+ Address :  
+</b></label>
+  <br><textarea id="address" name="Address" rows="2" cols="40" placeholder="street name,pincode,city name,landmark"></textarea><br> 
+  <label><b>   
+User ID :  
+</b></label>
+  <br><textarea id="userid" name="userid" rows="2" cols="40" placeholder="Enter your user id"></textarea><br>
+<b>Departments : </b>   
+<select>  
+<option value="Department">Select Your Department</option>  
+<option value="Computer Science Department">Computer Science Department</option>  
+<option value="Information Technology Department">Information Technology Department</option>  
+<option value="Electrical Department">Electrical Department</option>  
+<option value="Electronic Department">Electronic Department</option>  
+<option value="Civil Department">Civil Department</option>  
+<option value="Mechanical Department">Mechanical Department</option>  
+</select>  
+</div>  
+<div>  
+<label><b>   
+Class :  
+</b></label><br>  
+<input type="radio" value="First Year" name="class" checked >First Year    
+<input type="radio" value="Second Year" name="class">Second Year   
+<input type="radio" value="Third Year" name="class">Third Year 
+ <input type="radio" value="Fourth Year" name="class">Fourth Year
+  
+</div>  
+<label><b>   
+<label for="psw"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw" required>  
+  
+    
+    <button type="submit" class="registerbtn" style="background-color:blue;color:white"><b>Register</b></button> <br> 
+		
+</form>  
+</body>  
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>login</title>
+<style>
+h1 {
+			color: navy;
+			font-family: Times New Roman;
+			font-size: 250%;
+			 text-align: center;
+			}
+			p.solid {border-style: solid;}
+			.center {
+				text-align: center;
+				font-family: verdana;
+				color: 0;
+			}
+			body {
+			background-color: rgba(201, 76, 76, 0.3);
+			border-style: solid;			
+			border-width: 4px;			
+			border-color: rgb(225, 54, 60);					
+			margin-top: 50px;			
+			margin-bottom: 50px;			
+			margin-right: 5px;			
+			margin-left: 50px;						
+			padding-top: 80px;			
+			padding-right: 80px;			
+			padding-bottom: 80px;			
+			padding-left: 80px;	
+			}
+			
+			a:link {color: #FF1493;} 		
+			a:visited {color: 	#3cb371;}
+			a:hover {color: #0000FF;}
+			a:active {color: rgb(255, 0, 0);}
+			<script>
+				function myFunction() {
+				alert("Form submitted scussesfully");
+				}
+			</script>
+</style>
+</head>
+<body>
+<form action="/action_page.php" onsubmit="myFunction()">
+<center>  <h1>Login Form</h1>
+	<nav>
+		<a href="homepage.html">HOME |</a>
+		<a href="LA4_ESE.html">Register |</a>
+		<a href="login.html">Login </a>
+	</nav>
+	<hr>
+	</center>  
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+        
+    <button type="submit" style="background-color:blue;color:white"><b>Login</b></button>
+    
+</form>
+
+</body>
+</html>
